@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#777777"
+    android:weightSum="12" >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:hint="Tên bài hát........"/>
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:id="@+id/imageButtonBack"
+        android:background="@drawable/duongvien"
+
+        android:src="@drawable/buttonroundpreviousicon3232"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonPlay1"
+            android:background="@drawable/duongvien"
+            android:src="@drawable/buttonroundplayicon3232" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonPause1"
+            android:background="@drawable/duongvien"
+            android:src="@drawable/buttonroundpauseicon3232"
+            android:layout_alignBottom="@+id/imageButtonPlay1"
+            android:layout_alignEnd="@+id/imageButtonPlay1" />
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonNext"
+        android:background="@drawable/duongvien"
+        android:src="@drawable/buttonroundnexticon3232" />
+
+</LinearLayout>
